@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
   const audio = document.getElementById('background-music');
   
   // Play the song as soon as the user scrolls
-  if (window.scrollY > 1) {
+  if (window.scrollY > 0) {
     // Play the song (if it's not already playing)
     if (audio.paused) {
       audio.play();
@@ -13,47 +13,24 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Select all sections
-const sections = document.querySelectorAll('.section');
+window.addEventListener('scroll', function() {
+  // Get the scroll position
+  const scrollPosition = window.scrollY;
+  
+  // Get the quiz and slideshow elements
+  const quizContainer = document.querySelector('.quiz-container');
+  const slideshow = document.querySelector('.slideshow');
 
-// Intersection Observer to detect when the sections are in view
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Add 'section-visible' class when the section comes into view
-      entry.target.classList.add('section-visible');
-      observer.unobserve(entry.target); // Stop observing once the section is in view
-    }
-  });
-}, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+  // When the scroll reaches a certain point (e.g., 200px), show the quiz
+  if (scrollPosition > 200 && !quizContainer.classList.contains('show')) {
+    quizContainer.classList.add('show');
+  }
 
-// Observe each section
-sections.forEach(section => {
-  observer.observe(section);
+  // When the scroll reaches another point (e.g., 600px), show the slideshow
+  if (scrollPosition > 600 && quizContainer.classList.contains('show') && !slideshow.classList.contains('show')) {
+    slideshow.classList.add('show');
+  }
 });
-
-// Slideshow Logic
-let slideIndex = 0;
-
-function showSlides() {
-  let slides = document.querySelectorAll(".slide");
-  
-  // Hide all slides
-  slides.forEach(slide => slide.style.display = "none");
-  
-  // Move to the next slide
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1; } // Loop back to first slide
-  
-  // Show the current slide
-  slides[slideIndex - 1].style.display = "block";
-  
-  // Change slide every 10 seconds
-  setTimeout(showSlides, 10000);
-}
-
-// Start the slideshow when the page loads
-document.addEventListener("DOMContentLoaded", showSlides);
 
 document.getElementById('quiz-form').addEventListener('submit', function(e) {
   e.preventDefault(); // Prevent default form submission
@@ -79,7 +56,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
 
   // If all answers are correct, show the slideshow
   if (isCorrect) {
-    alert("All your answers are correct! Enjoy the final bits of this trip :)");
+    alert("All your answers are correct! Enjoy the trip :)");
     // document.querySelector('.quiz-container').style.display = 'none';
     const slideshow = document.getElementById('slideshow');
     slideshow.style.display = 'flex';

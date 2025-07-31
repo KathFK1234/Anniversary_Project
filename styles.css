@@ -1,0 +1,245 @@
+/* Body and background color */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #D0F0C0;
+  text-align: center;
+  /*margin: 100px;*/
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 0;
+  /*height: 700vh;*/
+  transition: all 2.5s ease;
+}
+
+/* Hide the audio element so it doesn’t appear on the page */
+audio {
+  display: none;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Initial State for Sections */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* Animated State */
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Greeting Section */
+.greeting h1 {
+  font-size: 2rem;
+  color: #ff0066;
+  margin-top: 20px;
+}
+
+.greeting p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/*Introduction Section*/
+.introduction h1 {
+  font-size: 2rem;
+  color: #ff0066;
+  margin-top: 20px;
+}
+
+.introduction p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* About Us Section */
+.about-us {
+  opacity: 1;  /* Force visibility */
+  transform: translateY(0);  /* Remove any transition effect for testing */
+}
+
+.about-us h2 {
+  font-size: 1.8rem;
+  color: #ff0066;
+}
+
+.about-us h3 {
+  font-size: 1.4rem;
+  color:darkblue;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Why I Love You Section */
+.why-i-love-you h2 {
+  font-size: 1.8rem;
+  color: #ff0066;
+}
+
+.why-i-love-you p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Quiz form styling */
+.quiz-container {
+  background-color: whitesmoke;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 40px;
+}
+
+.quiz-container h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question input {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 500px;
+  border: 1px solid #ddd;
+}
+
+/* Future Plans Section */
+.future-plans {
+  opacity: 1;  /* Force visibility */
+  transform: translateY(0);  /* Remove any transition effect for testing */
+}
+
+.future-plans h2 {
+  font-size: 1.8rem;
+  color: #ff0066;
+}
+
+.future-plans h3 {
+  font-size: 1.4rem;
+  color:darkblue;
+}
+
+.future-plans p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 2000px;
+  margin: 20px auto;
+}
+  
+/* Image container to center images */
+.image-container {
+  display: flex;
+  justify-content: center; /* Center images */
+  gap: 20px; /* Space between images */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 30px; /* Space from the top */
+}
+
+/* Style each image */
+.styled-image {
+  width: 500px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth effect */
+}
+
+/* Add hover effect */
+.styled-image:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide all slides initially */
+.slide {
+  display: none;
+  position: relative;
+}
+
+/* Make images fit within the container */
+.slide img {
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Caption text inside the image */
+.caption {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.0em;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.8; /* Slightly faded effect */
+}
+
+/* Fade animation */
+.fade {
+  animation: fadeEffect 3s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.playlist-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.playlist-link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #1DB954; /* Spotify green */
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.playlist-link:hover {
+    background: #1AA34A; /* Darker green on hover */
+    transform: scale(1.1);
+  }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relationship Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background audio -->
+  <audio id="background-music" loop autoplay>
+    <source src="Background_Song/frank_ocean_moon_river_mp3_69205.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Personalized Greeting Section -->
+  <div class="greeting section" id="greeting">
+      <h1>Happy Valentine's Day My Love ❤️</h1>
+      <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1751554827598-c96cb294c0e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+            alt="The beginning" class="styled-image">
+      </div>
+      <br> <br>
+      <p>Hey Princessa. <br> <br>
+        Here's a little surprise I tried making just for you.
+
+        <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1751554827598-c96cb294c0e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+            alt="An unforgettable memory" class="styled-image">
+        </div>
+        <br> <br>
+        I hope it makes your day as special as you are to me on this worldwide day of love ❤️
+      </p>
+  </div>
+
+  <!-- Our Journey Together Section -->
+  <div class="about-us section" id="about-us">
+      <h2>Our Journey Together</h2>
+      <p> 
+        <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1751554827598-c96cb294c0e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Our first date" class="styled-image">
+        </div>
+        <br> <br>
+        From the first time we met, I knew there was something special between us.
+        
+        <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1751554827598-c96cb294c0e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+            alt="An unforgettable memory" class="styled-image">
+        </div>
+        <br> <br>
+        Every day with you is filled with love, laughter, and unforgettable memories ❤️
+      </p>
+  </div>
+
+  <section>
+    <div>
+      <img src="https://images.unsplash.com/photo-1751554827598-c96cb294c0e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Image 3"
+            style="float:right;width:400px;height:400px;"/>
+    </div>
+
+    <div>
+      <!-- <div style="text-align: center; height: 500px;"> -->
+      <p style="text-align: right;">
+        The image will float to the right of the text. <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+        Dolore sint dolorum in earum laboriosam voluptatibus illum,<br>
+        est excepturi totam, quo deserunt porro expedita veniam vitae,<br>
+        qui aliquam laudantium nostrum incidunt.
+      </p>
+    </div>
+    
+    <div class="quiz-container">
+      <h1>Relationship Quiz</h1>
+
+      <form id="quiz-form">
+        <div class="question">
+          <p>1. How long have we known each other?</p>
+          <input type="text" id="q1" required>
+        </div>
+
+        <div class="question">
+          <p>2. What's my favorite color?</p>
+          <input type="text" id="q2" required>
+        </div>
+
+        <div class="question">
+          <p>3. What's the name of my first pet?</p>
+          <input type="text" id="q3" required>
+        </div>
+
+        <div class="question">
+          <p>4. What's our favorite restaurant?</p>
+          <input type="text" id="q4" required>
+        </div>
+
+        <div class="question">
+          <p>5. What's the first gallery we went to together?</p>
+          <input type="text" id="q5" required>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Why I Love You Section -->
+  <div class="why-i-love-you section" id="why-i-love-you">
+    <h2>Why I Love You</h2>
+      <!-- Slideshow Section -->
+      <div class="slideshow" class="slideshow">
+        <div class="slide fade">
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1751554827598-c96cb294c0e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Image 3"
+                  style="float:right;width:600px;height:600px;"/>
+            <!-- <div style="text-align: center; height: 500px;"> -->
+            <p class="description" style="text-align: left;">
+            The image will float to the right of the text. <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+            Dolore sint dolorum in earum laboriosam voluptatibus illum,<br>
+            est excepturi totam, quo deserunt porro expedita veniam vitae,<br>
+            qui aliquam laudantium nostrum incidunt.
+            </p>
+          </div>
+        </div>
+    
+        <div class="slide fade">
+           <div class="slide">
+              <img src="https://images.unsplash.com/photo-1743746185929-b4d8937ed816?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+                    alt="Image 1"
+                    style="float:right;width:600px;height:600px;"/>
+              <!-- <div style="text-align: center; height: 500px;"> -->
+              <p class="description" style="text-align: left;">
+                The image will float to the right of the text. <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                Dolore sint dolorum in earum laboriosam voluptatibus illum,<br>
+                est excepturi totam, quo deserunt porro expedita veniam vitae,<br>
+                qui aliquam laudantium nostrum incidunt.
+              </p>
+          </div>
+        </div>
+    
+        <div class="slide fade">
+           <div class="slide">
+              <img src="https://images.unsplash.com/photo-1753731683731-1032f9457b02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
+                  alt="Image 2"
+                  style="float:left;width:600px;height:600px;"/>
+                <!-- <div style="text-align: center; height: 500px;"> -->
+              <p class="description" style="text-align: right; left: 60%;">
+                The image will float to the left of the text. <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                Dolore sint dolorum in earum laboriosam voluptatibus illum,<br>
+                est excepturi totam, quo deserunt porro expedita veniam vitae,<br>
+                qui aliquam laudantium nostrum incidunt.
+              </p>
+          </div>
+        </div>
+
+        <div class="slide fade">
+           <div class="slide">
+              <img src="https://images.unsplash.com/photo-1751554827598-c96cb294c0e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Image 1"
+                style="float:right;width:600px;height:600px;"/>
+              <!-- <div style="text-align: center; height: 500px;"> -->
+              <p class="description" style="text-align: left;">
+                The image will float to the right of the text. <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                Dolore sint dolorum in earum laboriosam voluptatibus illum,<br>
+                est excepturi totam, quo deserunt porro expedita veniam vitae,<br>
+                qui aliquam laudantium nostrum incidunt.
+              </p>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img src="images/photo3.jpg" alt="Photo 3">
+          <div class="caption">You randomly let me do stuff that make me happy 🥹</div>
+        </div>
+
+      <ul>
+        <li>I could try to list all the reasons why I love you</li>
+        <li>but this would be an incredibly long web page to build</li>
+        <li>so I tried having a few pictures to sum th few I can find words for</li>
+        <li>in an attempt to make sure you see and feel even a fraction of how much you mean to me.</li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
